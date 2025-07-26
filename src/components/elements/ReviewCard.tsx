@@ -7,7 +7,7 @@ interface ReviewCardProps {
 
 const ReviewCard = ({ icon, secondaryIcon, title, description }: ReviewCardProps) => {
   return (
-    <div className="max-w-sm mx-auto bg-[#f8f8ff] p-6 rounded-lg w-[315px] md:w-[340px] lg:w-[325px] h-[210px] lg:h-[192px] border-2 border-[#E4E4E4]">
+    <div className="bg-[#f8f8ff] p-6 rounded-lg w-[315px] md:w-[340px] lg:w-[325px] h-[210px] lg:h-[192px] border-2 border-[#E4E4E4] mx-auto" >
       <div className="flex justify-center mb-4">
         <div className="w-14 h-14 rounded-full border-2 border-white bg-[#E0DEF7] flex items-center justify-center relative">
           {icon}

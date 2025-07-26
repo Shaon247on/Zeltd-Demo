@@ -6,7 +6,7 @@ import HowCard from "../elements/HowCard";
 const HowItWorksSection = () => {
   return (
     <section className="mx-6 lg:mx-20 grid grid-cols-1 lg:grid-cols-3 items-start lg:items-center justify-between gap-6 lg:gap-10 py-16">
-      <div className="bg-[#FFFDFE] border-2 border-[#EFEFEF] col-span-1 lg:col-span-2 p-4">
+      <div className="bg-[#FFFDFE] border-2 border-[#EFEFEF] col-span-1 lg:col-span-2 p-4 rounded-[8px]">
         <div className="w-full border-b-2 border-[#F8E9EF] py-1">
           <h2 className="text-2xl leading-8">How It Works</h2>
           <p className="text-sm">How Zetld Helps You as a Buyer</p>
