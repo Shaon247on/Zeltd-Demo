@@ -1,41 +1,36 @@
 import React from "react";
+import HowCardSmall from "../elements/HowCardSmall";
+import { BadgeCheck, Cpu, FileUp } from "lucide-react";
+import HowCard from "../elements/HowCard";
 
 const HowItWorksSection = () => {
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-semibold text-center text-gray-800 mb-12">
-          How It Works
-        </h2>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <div className="flex flex-col items-center">
-            <div className="bg-blue-500 text-white p-6 rounded-full mb-4">
-              <i className="fas fa-upload text-2xl"></i>
-            </div>
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Upload Your Contract</h3>
-            <p className="text-gray-600 text-center">
-              Upload your contract and receive a legal overview within minutes.
-            </p>
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="bg-blue-500 text-white p-6 rounded-full mb-4">
-              <i className="fas fa-file-alt text-2xl"></i>
-            </div>
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Get AI-Powered Summary</h3>
-            <p className="text-gray-600 text-center">
-              Our AI scans your contract for risks and highlights the important sections.
-            </p>
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="bg-blue-500 text-white p-6 rounded-full mb-4">
-              <i className="fas fa-handshake text-2xl"></i>
-            </div>
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Connect with Legal Experts</h3>
-            <p className="text-gray-600 text-center">
-              Connect with our verified legal experts to review your contract.
-            </p>
-          </div>
+    <section className="mx-6 lg:mx-20 grid grid-cols-1 lg:grid-cols-3 items-start lg:items-center justify-between gap-6 lg:gap-10 py-16">
+      <div className="bg-[#FFFDFE] border-2 border-[#EFEFEF] col-span-1 lg:col-span-2 p-4">
+        <div className="w-full border-b-2 border-[#F8E9EF] py-1">
+          <h2 className="text-2xl leading-8">How It Works</h2>
+          <p className="text-sm">How Zetld Helps You as a Buyer</p>
         </div>
+        <div className="mt-5 space-y-3">
+          <HowCardSmall
+            icon={<FileUp className="text-white" size={20} />}
+            title="Upload Your Contract"
+            description="Drag & drop your contract of sale (PDF) no signup needed to start."
+          />
+          <HowCardSmall
+            icon={<Cpu className="text-white" size={20} />}
+            title="Upload Your Contract"
+            description="Drag & drop your contract of sale (PDF) no signup needed to start."
+          />
+          <HowCardSmall
+            icon={<BadgeCheck className="text-white" size={20} />}
+            title="Upload Your Contract"
+            description="Drag & drop your contract of sale (PDF) no signup needed to start."
+          />
+        </div>
+      </div>
+      <div className="col-span-1">
+        <HowCard />
       </div>
     </section>
   );
