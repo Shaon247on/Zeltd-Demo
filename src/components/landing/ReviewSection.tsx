@@ -5,7 +5,7 @@ import { Building, KeyRound, Search, Users } from "lucide-react";
 const ReviewSection = () => {
   return (
     <section className="py-12 bg-white">
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 text-center lg:mx-10">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 text-center lg:mx-10 px-6">
           <ReviewCard
             icon={<Users className="text-white" size={24} />}
             secondaryIcon={
