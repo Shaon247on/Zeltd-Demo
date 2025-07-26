@@ -1,4 +1,5 @@
 import AboutSection from "@/components/landing/AboutSection";
+import AccordionSection from "@/components/landing/AccordionSection";
 import Hero from "@/components/landing/Hero";
 import HowItWorksSection from "@/components/landing/HowItWorksSection";
 import ProfessionalsSection from "@/components/landing/ProfessionalsSection";
@@ -12,6 +13,7 @@ export default function Home() {
       <AboutSection/>
       <HowItWorksSection/>
       <ProfessionalsSection/>
+      <AccordionSection/>
     </div>
   );
 }
