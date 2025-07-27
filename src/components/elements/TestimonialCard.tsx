@@ -1,11 +1,11 @@
-interface ReviewCardProps {
+interface TestimonialCardProps {
   icon: React.ReactNode;
   secondaryIcon: React.ReactNode;
   title: string;
   description: string;
 }
 
-const ReviewCard = ({ icon, secondaryIcon, title, description }: ReviewCardProps) => {
+const TestimonialCard = ({ icon, secondaryIcon, title, description }: TestimonialCardProps) => {
   return (
     <div className="bg-[#f8f8ff] p-6 rounded-lg w-[315px] md:w-[340px] lg:w-[325px] h-[210px] lg:h-[192px] border-2 border-[#E4E4E4] mx-auto" >
       <div className="flex justify-center mb-4">
@@ -24,4 +24,4 @@ const ReviewCard = ({ icon, secondaryIcon, title, description }: ReviewCardProps
   );
 };
 
-export default ReviewCard;
+export default TestimonialCard;
